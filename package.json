@@ -18,8 +18,8 @@
   },
   "lint-staged": {
     "./src/**/*.{ts,js,jsx,tsx}": [
-      "yarn fix",
-      "yarn format"
+      "npm run fix",
+      "npm run format"
     ]
   },
   "dependencies": {
