@@ -1,15 +1,12 @@
 import SEO from '@/components/SEO/SEO'
-import { Boilerplate } from '@/components/Boilerplate/Boilerplate'
+import { WazeIframe } from '@/components/WazeIframe/WazeIframe'
 
 export default function Home(): JSX.Element {
   return (
     <>
-      <SEO
-        title="Next.js boilerplate"
-        description="Next.js boilerplate with Styled Components"
-      />
+      <SEO title="POC Hospital Waze" description="POC Hospital Waze" />
 
-      <Boilerplate />
+      <WazeIframe />
     </>
   )
 }
