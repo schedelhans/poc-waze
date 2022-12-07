@@ -3,7 +3,7 @@ import {
   HeaderMenu,
   HeaderSeparator,
   HeaderWrapper,
-} from '@/src/styles/components/Header/Header'
+} from '@/styles/components/Header/Header'
 import { Routes } from '@/utils/Routes'
 import Link from 'next/link'
 

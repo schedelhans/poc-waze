@@ -1,7 +1,4 @@
-import {
-  FooterNote,
-  FooterWrapper,
-} from '@/src/styles/components/Footer/Footer'
+import { FooterNote, FooterWrapper } from '@/styles/components/Footer/Footer'
 import { Routes } from '@/utils/Routes'
 import Link from 'next/link'
 

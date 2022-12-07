@@ -1,8 +1,8 @@
 import {
   WazeIframeContainer,
   WazeIframeWrapper,
-} from '@/src/styles/components/WazeIframe/WazeIframe'
-import { ILocation } from '@/src/utils/Interfaces'
+} from '@/styles/components/WazeIframe/WazeIframe'
+import { ILocation } from '@/utils/Interfaces'
 import { useEffect, useState } from 'react'
 
 export function WazeIframe(): JSX.Element {
