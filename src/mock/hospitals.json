@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Hospital Nossa Senhora das Graças",
+        "img": "https://www.hnsg.org.br/wp-content/uploads/2019/03/hnsg.png",
+        "address": "R. Alcídes Munhoz, 433",
+        "location": {
+            "lat": "-25.42109",
+            "lon": "-49.2906975"
+        }
+    },
+    {
+        "name": "Hospital Firenze",
+        "img": "https://lh5.googleusercontent.com/p/AF1QipM6ezKeVQG7a5RuV1tCinO081aqdFEh5ebzOebY=w408-h272-k-no",
+        "address": "Rua Desembargador Vieira Cavalcanti, 620",
+        "location": {
+            "lat": "-25.4210754",
+            "lon": "-49.2929023"
+        }
+    },
+    {
+        "name": "Hospital da Cruz Vermelha Brasileira",
+        "img": "https://tribunapr.uol.com.br/wp-content/uploads/2022/11/10112648/Montagens-GERAIS-1.jpg",
+        "address": "R. Vicente Machado, 1280",
+        "location": {
+            "lat": "-25.4377493",
+            "lon": "-49.2932855"
+        }
+    }
+]
