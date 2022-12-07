@@ -21,7 +21,8 @@
       "@/styles/*": ["./src/styles/*"],
       "@/contexts/*": ["src/contexts/*"],
       "@/utils/*": ["src/utils/*"],
-      "@/services/*": ["src/services/*"]
+      "@/services/*": ["src/services/*"],
+      "@/context/*": ["src/context/*"]
     }
   },
   "exclude": ["node_modules"],
