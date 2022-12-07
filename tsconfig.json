@@ -21,7 +21,8 @@
       "@/contexts/*": ["./contexts/*"],
       "@/utils/*": ["./utils/*"],
       "@/services/*": ["./services/*"],
-      "@/context/*": ["./context/*"]
+      "@/context/*": ["./context/*"],
+      "@/mock/*": ["./mock/*"],
     }
   },
   "exclude": ["node_modules"],

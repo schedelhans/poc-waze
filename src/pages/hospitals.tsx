@@ -1,7 +1,7 @@
 import Link from 'next/link'
-import HospitalsMock from '../mock/Hospitals.json'
-import { searchLocation } from '../utils/Functions'
-import { IHospital } from '../utils/Interfaces'
+import HospitalsMock from '@/mock/Hospitals.json'
+import { searchLocation } from '@/utils/Functions'
+import { IHospital } from '@/utils/Interfaces'
 
 export default function Hospitals(): JSX.Element {
   const hospitals = HospitalsMock as IHospital[]
