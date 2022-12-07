@@ -2,7 +2,7 @@ import {
   FooterNote,
   FooterWrapper,
 } from '@/src/styles/components/Footer/Footer'
-import { Routes } from '@/src/utils/Routes'
+import { Routes } from '@/utils/Routes'
 import Link from 'next/link'
 
 import PhilipsLogo from '../../../public/philips_logo.svg'
