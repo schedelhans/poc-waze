@@ -48,7 +48,7 @@ export const HeaderItem = styled.div`
 `
 
 export const HeaderSeparator = styled.div`
-  border: 1px solid black;
+  border: 1px solid white;
   border-radius: 3px;
   height: 30px;
   margin: 0 12px;
