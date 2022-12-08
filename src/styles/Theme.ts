@@ -4,4 +4,8 @@ export enum Theme {
   Gray = '#424548',
   Transparent = 'transparent',
   White = '#FFF',
+
+  DarkGreenPhilips = '#146464',
+  GreenPhilips = '#2C8A83',
+  LightGreenPhilips = '#41AB9F',
 }
