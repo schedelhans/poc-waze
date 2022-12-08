@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import HospitalsMock from '@/mock/Hospitals.json'
+import HospitalsMock from '@/mock/hospitals.json'
 import { searchLocation } from '@/utils/Functions'
 import { IHospital } from '@/utils/Interfaces'
 
