@@ -5,7 +5,7 @@ export interface ILocation {
 
 export interface IHospital {
   name: string
-  img: string
+  imgSrc: string
   address: string
   location: ILocation
 }
