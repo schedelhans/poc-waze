@@ -1,3 +1,4 @@
+import { ILocation } from '@/utils/Interfaces'
 import { createContext, ReactNode, useContext, useState } from 'react'
 
 export enum DefaultMap {
@@ -8,6 +9,8 @@ export enum DefaultMap {
 interface IGlobalConfigContext {
   defaultMap: DefaultMap
   setDefaultMap: (deafultMap: DefaultMap) => void
+  userLocation: ILocation
+  setUserLocation: (userLocation: ILocation) => void
 }
 
 interface IGlobalConfigProvider {
@@ -22,12 +25,18 @@ export const GlobalProvider = ({
   children,
 }: IGlobalConfigProvider): JSX.Element => {
   const [defaultMap, setDefaultMap] = useState<DefaultMap>(DefaultMap.Waze)
+  const [userLocation, setUserLocation] = useState<ILocation>({
+    lat: '',
+    lon: '',
+  })
 
   return (
     <GlobalConfigContext.Provider
       value={{
         defaultMap,
         setDefaultMap,
+        userLocation,
+        setUserLocation,
       }}
     >
       {children}
