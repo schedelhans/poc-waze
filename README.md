@@ -3,5 +3,5 @@
 * https://developers.google.com/waze/deeplinks
 * https://developers.google.com/waze/iframe
 
-# Aplicativo publicado
+# Deployed App
 * https://poc-waze-master.vercel.app/
