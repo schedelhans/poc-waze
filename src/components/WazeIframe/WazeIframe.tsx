@@ -4,6 +4,7 @@ import {
   WazeIframeWrapper,
 } from '@/styles/components/WazeIframe/WazeIframe'
 import { useEffect } from 'react'
+import Loader from '@/components/Loader/Loader'
 
 export function WazeIframe(): JSX.Element {
   const { userLocation, setUserLocation } = useGlobalConfig()
@@ -27,7 +28,11 @@ export function WazeIframe(): JSX.Element {
   return (
     <WazeIframeWrapper>
       <WazeIframeContainer>
-        <iframe src={iframeSrc} width="100%" height="100%" />
+        {userLocation.lat !== '' && (
+          <iframe src={iframeSrc} width="100%" height="100%" />
+        )}
+
+        {userLocation.lat === '' && <Loader />}
       </WazeIframeContainer>
     </WazeIframeWrapper>
   )
