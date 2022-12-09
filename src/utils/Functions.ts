@@ -13,6 +13,7 @@ export function searchLocation(
     const encodedLocation = encodeURI(searchLocation)
     return wazeSearch + `q=${encodedLocation}` + '&navigate=true'
   }
+
   const location = searchLocation as ILocation
   return (
     wazeDirection +
