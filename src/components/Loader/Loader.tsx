@@ -6,7 +6,7 @@ export default function Loader(): JSX.Element {
     <GridLoader
       color={Theme.LightGreenPhilips}
       loading
-      size={150}
+      size={25}
       aria-label="Loading Spinner"
       data-testid="loader"
     />
