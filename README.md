@@ -1,6 +1,6 @@
 # Description
 
-This Proof of Concept (POC), uses Next.js and [Waze's API](https://www.youtube.com/@rafaellaballerini) to help user find the best route to the hospitals prevously registered. It gives a map in a [Waze's IFrame](https://developers.google.com/waze/iframe) too, helping the user to find any location wanted.
+This Proof of Concept (POC), uses Next.js and [Waze's API](https://developers.google.com/waze/deeplinks) to help user find the best route to the hospitals prevously registered. It gives a map in a [Waze's IFrame](https://developers.google.com/waze/iframe) too, helping the user to find any location wanted.
 
 # Technical
 

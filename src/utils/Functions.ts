@@ -1,7 +1,9 @@
+import { isMobile, isTablet } from 'react-device-detect'
 import { ILocation } from './Interfaces'
 
-const wazeSearch = 'https://waze.com/live-map/ul?'
-const wazeDirection = 'https://waze.com/live-map/directions?navigate=true'
+const wazeSearchEndpoint = 'https://waze.com/live-map/ul?'
+const wazeDirectionEndpoint =
+  'https://waze.com/live-map/directions?navigate=true'
 
 type searchLocationType = string | ILocation
 
@@ -11,12 +13,17 @@ export function searchLocation(
 ): string {
   if (typeof searchLocation === 'string') {
     const encodedLocation = encodeURI(searchLocation)
-    return wazeSearch + `q=${encodedLocation}` + '&navigate=true'
+    const endpoint =
+      wazeSearchEndpoint + `q=${encodedLocation}` + '&navigate=true'
+    return isTablet || isMobile ? 'waze://' + endpoint : endpoint
   }
 
   const location = searchLocation as ILocation
-  return (
-    wazeDirection +
+  const mobileEndpoint =
+    wazeSearchEndpoint + `ll=${location.lat},${location.lon}`
+  const endpoint =
+    wazeDirectionEndpoint +
     `&to=ll.${location.lat},${location.lon}&from=ll.${userLocation.lat},${userLocation.lon}`
-  )
+
+  return isTablet || isMobile ? 'waze://' + mobileEndpoint : endpoint
 }
