@@ -27,15 +27,8 @@ export const HospitalCardWrapper = styled.div`
   }
 
   ${media.smallTablet} {
-    max-width: 100%;
-
-    &:first-child {
-      margin-top: 0;
-    }
-
-    &:not(:first-child) {
-      margin-top: 24px;
-    }
+    margin-top: 24px;
+    width: 100%;
   }
 `
 export const HospitalCardImageContainer = styled.div`
