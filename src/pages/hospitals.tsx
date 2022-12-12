@@ -21,7 +21,10 @@ export default function Hospitals(): JSX.Element {
       <HospitalCardsWrapper>
         {hospitals.map((hospital, index) => (
           <Link
-            href={searchLocation(hospital.location, userLocation)}
+            href={searchLocation(
+              hospital.location || hospital.address,
+              userLocation,
+            )}
             target="_blank"
             key={`hospital_${index}`}
           >
